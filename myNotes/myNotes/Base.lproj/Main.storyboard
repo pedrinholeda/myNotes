@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0xV-5e-kTj">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gy7-Xe-JKy">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo" translatesAutoresizingMaskIntoConstraints="NO" id="UVn-DB-ewY">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qLf-OI-S8V">
+                                        <rect key="frame" x="27" y="35" width="321" height="250"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jYj-1R-SHA">
+                                                <rect key="frame" x="0.0" y="0.0" width="321" height="212"/>
+                                                <color key="backgroundColor" red="0.99967747929999995" green="0.99010986089999997" blue="0.78190928699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bst-vq-OV7">
+                                                <rect key="frame" x="0.0" y="212" width="321" height="38"/>
+                                                <color key="backgroundColor" red="0.29081493619999998" green="0.23250368239999999" blue="0.202840358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" image="botao_salvar"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="Y7V-0d-S2g"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="qLf-OI-S8V" firstAttribute="top" secondItem="gy7-Xe-JKy" secondAttribute="top" constant="35" id="7wC-iE-QhR"/>
+                                    <constraint firstAttribute="trailing" secondItem="qLf-OI-S8V" secondAttribute="trailing" constant="27" id="Bqh-fQ-gB4"/>
+                                    <constraint firstAttribute="trailing" secondItem="UVn-DB-ewY" secondAttribute="trailing" id="CTi-bB-jCg"/>
+                                    <constraint firstItem="UVn-DB-ewY" firstAttribute="top" secondItem="gy7-Xe-JKy" secondAttribute="top" id="K2t-uA-0Cr"/>
+                                    <constraint firstItem="qLf-OI-S8V" firstAttribute="leading" secondItem="gy7-Xe-JKy" secondAttribute="leading" constant="27" id="LqS-90-W4i"/>
+                                    <constraint firstAttribute="bottom" secondItem="UVn-DB-ewY" secondAttribute="bottom" id="d9k-9j-gg3"/>
+                                    <constraint firstItem="UVn-DB-ewY" firstAttribute="leading" secondItem="gy7-Xe-JKy" secondAttribute="leading" id="jrZ-Ub-bpl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gy7-Xe-JKy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P6H-jB-hsU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gy7-Xe-JKy" secondAttribute="bottom" id="Pp2-rY-aeX"/>
+                            <constraint firstItem="gy7-Xe-JKy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dMV-7s-Fbh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gy7-Xe-JKy" secondAttribute="trailing" id="iDj-OB-nGS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hKa-DO-7d3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136.25" y="123.59154929577466"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9hI-GF-eWA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0xV-5e-kTj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VDe-D5-vo7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.29081493619999998" green="0.23250368239999999" blue="0.202840358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99967747929999995" green="0.99010986089999997" blue="0.78190928699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="war-pb-Zgt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsH-af-15P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="123.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botao_salvar" width="321" height="38"/>
+        <image name="fundo" width="768" height="462"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
