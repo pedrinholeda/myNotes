@@ -36,6 +36,9 @@
                                                 <rect key="frame" x="0.0" y="212" width="321" height="38"/>
                                                 <color key="backgroundColor" red="0.29081493619999998" green="0.23250368239999999" blue="0.202840358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" image="botao_salvar"/>
+                                                <connections>
+                                                    <action selector="saveNotes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fos-dV-uuV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -65,6 +68,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hKa-DO-7d3"/>
+                    <connections>
+                        <outlet property="textViewCampo" destination="jYj-1R-SHA" id="Cj5-Lg-7zA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
