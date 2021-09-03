@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--minhas Anotações-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myNotes" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qLf-OI-S8V">
-                                        <rect key="frame" x="27" y="35" width="321" height="250"/>
+                                        <rect key="frame" x="27" y="25" width="321" height="250"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jYj-1R-SHA">
                                                 <rect key="frame" x="0.0" y="0.0" width="321" height="212"/>
@@ -48,7 +48,7 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="qLf-OI-S8V" firstAttribute="top" secondItem="gy7-Xe-JKy" secondAttribute="top" constant="35" id="7wC-iE-QhR"/>
+                                    <constraint firstItem="qLf-OI-S8V" firstAttribute="top" secondItem="gy7-Xe-JKy" secondAttribute="top" constant="25" id="7wC-iE-QhR"/>
                                     <constraint firstAttribute="trailing" secondItem="qLf-OI-S8V" secondAttribute="trailing" constant="27" id="Bqh-fQ-gB4"/>
                                     <constraint firstAttribute="trailing" secondItem="UVn-DB-ewY" secondAttribute="trailing" id="CTi-bB-jCg"/>
                                     <constraint firstItem="UVn-DB-ewY" firstAttribute="top" secondItem="gy7-Xe-JKy" secondAttribute="top" id="K2t-uA-0Cr"/>
@@ -67,7 +67,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gy7-Xe-JKy" secondAttribute="trailing" id="iDj-OB-nGS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hKa-DO-7d3"/>
+                    <navigationItem key="navigationItem" title="minhas Anotações" id="hKa-DO-7d3"/>
                     <connections>
                         <outlet property="textViewCampo" destination="jYj-1R-SHA" id="Cj5-Lg-7zA"/>
                     </connections>
